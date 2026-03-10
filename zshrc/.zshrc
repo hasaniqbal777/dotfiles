@@ -45,7 +45,7 @@ export PATH="$HOME/.local/bin:$PATH"
 alias cat="bat"
 alias cd="z"
 alias ls="eza --icons --grid --group-directories-first"
-alias ll="eza -la --icons --grid --group-directories-first"
+alias ll="eza -la --icons --group-directories-first"
 
 # ----------------------------------------------------
 # Zoxide Environment
@@ -55,6 +55,7 @@ eval "$(zoxide init zsh)"
 # ---------------------------------------------------- 
 # Homebrew Environment
 # ---------------------------------------------------- 
+export HOMEBREW_BUNDLE_FILE="$HOME/.config/homebrew/Brewfile"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # ---------------------------------------------------- 

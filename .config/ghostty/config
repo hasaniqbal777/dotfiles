@@ -1,0 +1,7 @@
+theme = "Dracula"
+font-family = "MesloLGS NF"
+font-size = 16
+mouse-hide-while-typing = true
+macos-option-as-alt = true
+window-inherit-working-directory = false
+macos-secure-input-indication = false

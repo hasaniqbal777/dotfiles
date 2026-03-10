@@ -1,0 +1,17 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = Hasan Iqbal
+	email = 34169605+hasaniqbal777@users.noreply.github.com
+	signingkey = B1B717E8A2B4D4B321D9153CC2130008C02AA4BB
+[core]
+	editor = code --wait
+[commit]
+	gpgsign = true
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[gpg]
+	program = gpg

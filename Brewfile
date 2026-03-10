@@ -1,0 +1,138 @@
+#  _   _ ___ 
+# | | | |_ _|  Hasan Iqbal
+# | |_| || |   https://github.com/hasaniqbal777
+# |  _  || | 
+# |_| |_|___|
+#
+# My Brewfile. Managed with `brew bundle`.
+
+# Taps
+tap "databricks/tap"
+tap "go-task/tap"
+tap "kreuzwerker/taps"
+tap "tofuutils/tap"
+
+# CI/CD & automation
+brew "act"
+brew "gh"
+brew "go-task/tap/go-task"
+
+# Cloud & infrastructure
+brew "awscli"
+brew "databricks/tap/databricks"
+brew "kreuzwerker/taps/m1-terraform-provider-helper"
+brew "tfenv"
+brew "tofuenv"
+
+# Git & security
+brew "git-filter-repo"
+brew "git-lfs"
+brew "gitleaks"
+brew "gnupg"
+
+# Developer tooling
+brew "golangci-lint"
+brew "nvm"
+brew "pinentry-mac"
+brew "uv"
+
+# AI & ML
+cask "claude-code"
+brew "llmfit"
+brew "models"
+
+# Terminal utilities
+brew "bat"
+brew "chafa"
+brew "eza"
+brew "ffmpeg"
+brew "glow"
+brew "mactop"
+brew "mas"
+brew "mole"
+brew "stow"
+brew "tmux"
+brew "zoxide"
+
+# Desktop apps
+cask "bartender"
+cask "cleanshot"
+cask "docker-desktop"
+cask "ghostty"
+cask "raycast"
+cask "spotify"
+cask "visual-studio-code"
+cask "vlc"
+
+# Mac App Store
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "Slack", id: 803453959
+mas "Surfshark", id: 1437809329
+
+# VS Code extensions
+vscode "alefragnani.bookmarks"
+vscode "alefragnani.project-manager"
+vscode "anthropic.claude-code"
+vscode "bierner.comment-tagged-templates"
+vscode "catppuccin.catppuccin-vsc"
+vscode "darkriszty.markdown-table-prettify"
+vscode "dbaeumer.vscode-eslint"
+vscode "dbcode.dbcode"
+vscode "dotjoshjohnson.xml"
+vscode "dracula-theme.theme-dracula"
+vscode "dvirtz.parquet-viewer"
+vscode "enkia.tokyo-night"
+vscode "gerda.vscode-parquet-viewer"
+vscode "github.codespaces"
+vscode "github.copilot-chat"
+vscode "github.vscode-pull-request-github"
+vscode "golang.go"
+vscode "hashicorp.terraform"
+vscode "hediet.vscode-drawio"
+vscode "hollowtree.vue-snippets"
+vscode "humao.rest-client"
+vscode "james-yu.latex-workshop"
+vscode "mechatroner.rainbow-csv"
+vscode "mhutchie.git-graph"
+vscode "mikestead.dotenv"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.autopep8"
+vscode "ms-python.debugpy"
+vscode "ms-python.isort"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-toolsai.datawrangler"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode.cpp-devtools"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.cpptools-extension-pack"
+vscode "ms-vscode.cpptools-themes"
+vscode "ms-vscode.remote-explorer"
+vscode "ms-windows-ai-studio.windows-ai-studio"
+vscode "octref.vetur"
+vscode "openai.chatgpt"
+vscode "pkief.material-icon-theme"
+vscode "redhat.vscode-yaml"
+vscode "ritwickdey.liveserver"
+vscode "scala-lang.scala"
+vscode "scalameta.metals"
+vscode "sdras.vue-vscode-snippets"
+vscode "simonsiefke.svg-preview"
+vscode "svelte.svelte-vscode"
+vscode "tamasfe.even-better-toml"
+vscode "vsls-contrib.gistfs"
+vscode "vue.volar"
+vscode "yzane.markdown-pdf"
+
+# Go tools
+go "golang.org/x/tools/gopls"

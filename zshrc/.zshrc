@@ -87,3 +87,16 @@ export NVM_DIR="$HOME/.nvm"
 # THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# ----------------------------------------------------
+# LangFlow Environment
+# ----------------------------------------------------
+. "$HOME/.langflow/uv/env"
+
+# ----------------------------------------------------
+# LM Studio Environment
+# ----------------------------------------------------
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/hasaniqbal/.lmstudio/bin"
+# End of LM Studio CLI section
+

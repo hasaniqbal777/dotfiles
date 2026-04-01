@@ -33,12 +33,14 @@ brew "gnupg"
 # Developer tooling
 brew "golangci-lint"
 brew "nvm"
+brew "pandoc"
 brew "pinentry-mac"
 brew "uv"
 
 # AI & ML
 cask "claude-code"
 brew "llmfit"
+cask "lm-studio"
 brew "models"
 
 # Terminal utilities
@@ -65,9 +67,6 @@ cask "visual-studio-code"
 cask "vlc"
 
 # Mac App Store
-mas "Microsoft Excel", id: 462058435
-mas "Microsoft PowerPoint", id: 462062816
-mas "Microsoft Word", id: 462054704
 mas "Slack", id: 803453959
 mas "Surfshark", id: 1437809329
 
@@ -77,6 +76,7 @@ vscode "alefragnani.project-manager"
 vscode "anthropic.claude-code"
 vscode "bierner.comment-tagged-templates"
 vscode "catppuccin.catppuccin-vsc"
+vscode "charliermarsh.ruff"
 vscode "darkriszty.markdown-table-prettify"
 vscode "dbaeumer.vscode-eslint"
 vscode "dbcode.dbcode"
@@ -97,10 +97,12 @@ vscode "james-yu.latex-workshop"
 vscode "mechatroner.rainbow-csv"
 vscode "mhutchie.git-graph"
 vscode "mikestead.dotenv"
+vscode "ms-azuretools.vscode-azure-github-copilot"
+vscode "ms-azuretools.vscode-azure-mcp-server"
+vscode "ms-azuretools.vscode-azureresourcegroups"
 vscode "ms-azuretools.vscode-docker"
-vscode "ms-python.autopep8"
 vscode "ms-python.debugpy"
-vscode "ms-python.isort"
+vscode "ms-python.mypy-type-checker"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
 vscode "ms-python.vscode-python-envs"

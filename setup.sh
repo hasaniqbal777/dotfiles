@@ -15,3 +15,4 @@ stow .
 
 # zsh → ~/
 ln -sf "$HOME/.config/zshrc/.zshrc" "$HOME/.zshrc"
+ln -sf "$HOME/.config/zshenv/.zshenv" "$HOME/.zshenv"

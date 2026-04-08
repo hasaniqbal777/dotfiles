@@ -1,0 +1,79 @@
+{
+    "version": 3,
+    "lines": [
+        [
+            {
+                "id": "740ce92f-5104-4709-94f3-3f9d5559bcc0",
+                "type": "custom-text",
+                "backgroundColor": "bgBrightMagenta",
+                "customText": "󰆦 ",
+                "merge": "no-padding",
+                "color": "black"
+            },
+            {
+                "id": "0386e3a5-a7b9-4fee-9659-b24be1f92b6e",
+                "type": "model",
+                "backgroundColor": "bgBrightMagenta",
+                "rawValue": true,
+                "color": "black"
+            },
+            {
+                "id": "1ff11cee-6c96-4a82-be79-9ecc32376ee7",
+                "type": "custom-text",
+                "backgroundColor": "bgBrightMagenta",
+                "customText": "󰆼 ",
+                "merge": "no-padding"
+            },
+            {
+                "id": "a8f8b77e-6724-40f5-9a31-2e4cbe589ac6",
+                "type": "context-bar",
+                "backgroundColor": "bgBrightBlue",
+                "rawValue": true,
+                "metadata": {
+                    "display": "progress-short"
+                }
+            },
+            {
+                "id": "7ac074e6-3c69-4b99-a733-434795c1a4fe",
+                "type": "custom-text",
+                "backgroundColor": "bgBrightMagenta",
+                "customText": "  ",
+                "merge": "no-padding"
+            },
+            {
+                "id": "5",
+                "type": "git-branch",
+                "color": "magenta",
+                "rawValue": true
+            },
+            {
+                "id": "7",
+                "type": "git-changes",
+                "color": "yellow"
+            }
+        ]
+    ],
+    "flexMode": "full",
+    "compactThreshold": 60,
+    "colorLevel": 2,
+    "defaultPadding": " ",
+    "inheritSeparatorColors": false,
+    "globalBold": false,
+    "powerline": {
+        "enabled": true,
+        "separators": [
+            ""
+        ],
+        "separatorInvertBackground": [
+            false
+        ],
+        "startCaps": [
+            ""
+        ],
+        "endCaps": [
+            ""
+        ],
+        "theme": "catppuccin",
+        "autoAlign": true
+    }
+}

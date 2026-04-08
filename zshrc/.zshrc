@@ -47,16 +47,30 @@ alias cd="z"
 alias ls="eza --icons --grid --group-directories-first"
 alias ll="eza -la --icons --group-directories-first"
 
-# ----------------------------------------------------
-# Zoxide Environment
-# ----------------------------------------------------
-eval "$(zoxide init zsh)"
-
 # ---------------------------------------------------- 
 # Homebrew Environment
 # ---------------------------------------------------- 
 export HOMEBREW_BUNDLE_FILE="$HOME/.config/homebrew/Brewfile"
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Auto-append new installs to Brewfile under "# TO BE SORTED"
+brew() {
+  command brew "$@" || return $?
+  if [[ "$1" == "install" ]]; then
+    shift
+    local brewfile="$HOMEBREW_BUNDLE_FILE"
+    local type="brew"
+    while [[ "$1" == --* ]]; do
+      [[ "$1" == "--cask" ]] && type="cask"
+      shift
+    done
+    for formula in "$@"; do
+      if ! grep -q "\"$formula\"" "$brewfile" 2>/dev/null; then
+        echo "$type \"$formula\"" >> "$brewfile"
+      fi
+    done
+  fi
+}
 
 # ---------------------------------------------------- 
 # Python Environment
@@ -82,13 +96,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # ----------------------------------------------------
-# SDKMAN Environment
-# ----------------------------------------------------
-# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-# ----------------------------------------------------
 # LangFlow Environment
 # ----------------------------------------------------
 . "$HOME/.langflow/uv/env"
@@ -100,3 +107,15 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export PATH="$PATH:/Users/hasaniqbal/.lmstudio/bin"
 # End of LM Studio CLI section
 
+# ----------------------------------------------------
+# Zoxide Environment
+# ----------------------------------------------------
+eval "$(zoxide init zsh)"
+export _ZO_DOCTOR=0
+
+# ----------------------------------------------------
+# SDKMAN Environment
+# ----------------------------------------------------
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
